@@ -121,68 +121,68 @@ export default class Kalkulator extends Component {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'stretch',
-        justifyContent: 'center',
-    },
-    display: {
-        flex: 1,
-        backgroundColor: '#222',
-        alignItems: 'flex-end',
-        padding: 32,
-        justifyContent: 'flex-end',
-    },
-    keyboard: {
-        flex: 3,
-        alignItems: 'stretch',
-    },
-    keyboardLine: {
-        flex: 1,
-        color:'#823',
-        flexDirection:'row',
-    },
-    displayText: {
-      color:'#666',
-      fontSize:24,
-    },
-    resultText: {
-      color:'#888',
-      fontSize:48,
-    },
-    text: {
-      color:'#666',
-      fontSize:32,
-    },
-    textLight: {
-      color:'#FFF',
-      fontSize:32,
-    },
-    button:{
+  container: {
       flex: 1,
-      backgroundColor: '#111',
-      alignItems: 'center',
+      alignItems: 'stretch',
       justifyContent: 'center',
-    },
-    buttonDark:{
+  },
+  display: {
       flex: 1,
-      backgroundColor: '#000',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    buttonResult:{
+      backgroundColor: '#222',
+      alignItems: 'flex-end',
+      padding: 32,
+      justifyContent: 'flex-end',
+  },
+  keyboard: {
+      flex: 3,
+      alignItems: 'stretch',
+  },
+  keyboardLine: {
       flex: 1,
-      backgroundColor: '#458',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    buttonDelete:{
-      flex: 1,
-      backgroundColor: '#400',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    bracketButtonFix:{
-      flex: 0.5
-    }
+      color:'#823',
+      flexDirection:'row',
+  },
+  displayText: {
+    color:'#666',
+    fontSize:24,
+  },
+  resultText: {
+    color:'#888',
+    fontSize:48,
+  },
+  text: {
+    color:'#666',
+    fontSize:32,
+  },
+  textLight: {
+    color:'#FFF',
+    fontSize:32,
+  },
+  button:{
+    flex: 1,
+    backgroundColor: '#111',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonDark:{
+    flex: 1,
+    backgroundColor: '#000',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonResult:{
+    flex: 1,
+    backgroundColor: '#458',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonDelete:{
+    flex: 1,
+    backgroundColor: '#400',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  bracketButtonFix:{
+    flex: 0.5
+  }
 });
