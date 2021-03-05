@@ -6,11 +6,7 @@ aplikacje-mobilne
 ## Narzędzia
 
 Aplikacja przygotowana w React Native / React-CLI z wykorzystaniem modułu EXPO.
-<<<<<<< HEAD
 Jako emulator wykorzystano AVD z Android Studio
-=======
-Jako emulator wykotzystano AVD z Android Studio
->>>>>>> 3d76892e742bb607f886ba1568d26e4c0924b5fa
 
 ## Działanie
 
@@ -64,11 +60,7 @@ calculate = () => {
   this.prepareDisplay()
 } 
 
-<<<<<<< HEAD
 // Czyszci wyświetlacz i wzór
-=======
-// Czyszci wy swietlacz i wzór
->>>>>>> 3d76892e742bb607f886ba1568d26e4c0924b5fa
 clear = () => {
   this.setState({
     display: '',
