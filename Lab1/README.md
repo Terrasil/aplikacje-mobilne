@@ -6,6 +6,7 @@ aplikacje-mobilne
 ## Narzędzia
 
 Aplikacja przygotowana w React Native / React-CLI z wykorzystaniem modułu EXPO.
+
 Jako emulator wykorzystano AVD z Android Studio
 
 ## Działanie
