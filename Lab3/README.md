@@ -200,7 +200,7 @@ import { TouchableOpacity, Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { ScreenStyle } from '../Styles';
 
-# Komponent wyświetlający liste elementów, korzysta z .map()
+// Komponent wyświetlający liste elementów, korzysta z .map()
 const ListaLiczb = ({ style, textStyle, liczby }) => {
     var index = 0
     if (liczby.length > 0) {
@@ -234,13 +234,13 @@ export default class SortAndFilter extends Component {
         this.state = { tablicaLiczb };
     }
 
-    # Odpowiada za sortowanie
+    // Odpowiada za sortowanie
     sortowanie = () =>{
         this.state.tablicaLiczb.sort((a,b) => a > b ? 1:-1)
         this.forceUpdate()
     }
     
-    # Ponowne generowanie tablicy
+    // Ponowne generowanie tablicy
     random = (ilosc, max) => () =>{
         const noweLiczby = []
         for (let i = 0; i < ilosc; i++) {
