@@ -17,6 +17,8 @@ Aplikacja posiada menu z trzema opcjami ("Spread syntax", "Rest parameter" oraz 
 
 Po kliknięciu kazda z opci pokazuje nam opis danego elementu oraz przykładowy kod z jego wykorzystaniem.
 
+Pliki z komponentami znajdują się w folderze **./src** jak i plik z stylami.
+
 ## App.js
 
 Główny widok aplikacji posiada nawigator jednak wyświetlany jest domyślnie komponent ***HomeScreen***
@@ -48,7 +50,9 @@ export default function App() {
 ## styles.js
 
 ***styles** - główna struktóra styli*
+
 ***styles.home** - odpowiada za styl **HomeScreen.js***
+
 ***styles.info** - odpowiada za style pozostałych komponentów 'Screen'*
 
 ```js
