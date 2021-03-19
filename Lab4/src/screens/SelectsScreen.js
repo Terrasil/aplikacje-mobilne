@@ -14,7 +14,7 @@ class Select extends Component {
         return (
             <View>
                 <Picker selectedValue = {this.state.selectedValue} onValueChange = {this.setSelectedValue}>
-                    {this.props.items ? this.props.items.map(item => <Picker.Item index = {item.id} label = {item.name ? item.name : item.title} value = {item.id}/>) : <Picker.Item index = {0} label = "Brak" value = {false}/>}
+                    {this.props.items ? this.props.items.map(item => <Picker.Item key = {item.id} label = {item.name ? item.name : item.title} value = {item.id}/>) : <Picker.Item key = {0} label = "Brak" value = {false}/>}
                 </Picker>
             </View>
         )

@@ -52,7 +52,7 @@ export default class TextInputsScreen extends Component {
                     </>
                     <>
                         <Text style={ScreenStyle.textBold}>TextInput z przykładową metodą wyswietlającą alert po zakończeniu pisania</Text>
-                        <Text>onEndEditing = event => alert(event.nativeEvent.text)</Text>
+                        <Text>{`onEndEditing={ event => { alert(event.nativeEvent.text) }}`}</Text>
                         <TextInput onEndEditing={event =>{alert(event.nativeEvent.text)}} style={ScreenStyle.textInput}/><Text/>
                     </>
                 </ScrollView>
