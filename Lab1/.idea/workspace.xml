@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="629b4bfa-d3e2-41f3-b86a-7b400c459ffa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab4/src/screens/TextInputsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/src/screens/TextInputsScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +37,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="154" width="1200" height="800" key="AVDManager" timestamp="1616138969403">
+    <state x="525" y="74" width="1200" height="800" key="AVDManager" timestamp="1616233693613">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="154" width="1200" height="800" key="AVDManager/0.0.1920.1040@0.0.1920.1040" timestamp="1616138969403" />
+    <state x="525" y="74" width="1200" height="800" key="AVDManager/0.0.1920.1040@0.0.1920.1040" timestamp="1616233693613" />
     <state x="849" y="385" key="run.anything.popup" timestamp="1616138628969">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
