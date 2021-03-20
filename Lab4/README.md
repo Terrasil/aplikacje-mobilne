@@ -9,7 +9,7 @@ Jako podstawę aplikacji wykorzystałem kod z [Lab3](https://github.com/Terrasil
 
 Dla wygody wszędzie wykorzystano komponent ***ScrollView***
 
-#### Dodatkowe poduły
+#### Dodatkowe moduły
 
  - @react-native-picker/picker
  
