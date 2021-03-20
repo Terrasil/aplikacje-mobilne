@@ -316,7 +316,7 @@ export default class ResizeScreen extends Component {
 
 ## LazyLoadingAndIcons.js
 
-Ekran ładuje olbrzymi obraz (tapetę). Ta tapeta ma rozmiar 7680x4320px. Rozmiar był podyktowany tym że już wcześniej wspomniany Emultor AVD nie ma dostepnej możliwości zawężenia transferu aby wolniej łądować obrazy. Pomimo ogromnego rozmiaru tapety nie jest się wstanie zauwazyć placeholdera w postaci obrazu wbudowanego w **expo** w folderze /assets. Paramerty loadingIndicatorSource lub defaultSource pozwalają na wskazanie komponentu lub assetu który jest wyświetlany zanim obraz zostanie zaladowany. Ikony rownież podlegają leniwemu ładowaniu co jest bardziej widoczne.
+Ekran ładuje olbrzymi obraz (tapetę). Ta tapeta ma rozmiar 7680x4320px. Rozmiar był podyktowany tym że już wcześniej wspomniany Emultor AVD nie ma dostepnej możliwości zawężenia transferu aby wolniej łądować obrazy. Pomimo ogromnego rozmiaru tapety nie jest się wstanie zauwazyć placeholdera w postaci obrazu wbudowanego w **expo** w folderze /assets. Paramerty loadingIndicatorSource lub defaultSource (tylko jedno jednocześnie) pozwalają na wskazanie komponentu lub assetu który jest wyświetlany zanim obraz zostanie zaladowany. Ikony rownież podlegają leniwemu ładowaniu co jest bardziej widoczne.
 
 ```js
 import React, {Component } from 'react';
@@ -636,7 +636,7 @@ export default class AsyncStorageScreen extends Component {
 
 ## SyncDataScreen.js
 
-Wykorzystałem elementy poznane przy realizacji poprzednich ekranów aby wykorzystać je w bardziej praktyczny sposób. Informacje z elementu Slider i TextInput (Po wciśnięciu Button's) są zapisywane w zasobach lokalnych i jeżeli jest dostępne połączenie internetowe, są one wysyłane na zdalne magazynowanie zasobów. Nieststy przez wspominane niejednokrotnie wcześniej problemy z emulatorem tymrazem zasymulowałem połączenie. Switch pozwala "wyłączyć lub właczyć połączenie interentowe" (Toast informuje nas o zmianie stanu internetu). W stats jest przygotowany "kontener" imitujązy zewnetrzny magazyn. Metoda chechData aktualizuje zasoby co 1000mn [setInterval] o ile wykryje połączenie. Dodatkowo umiesciłem niebieski panel który daje nam wgląd w aktualny stan magazynów.  
+Wykorzystałem elementy poznane przy realizacji poprzednich ekranów aby wykorzystać je w bardziej praktyczny sposób. Informacje z elementu Slider i TextInput (Po wciśnięciu Button's) są zapisywane w zasobach lokalnych i jeżeli jest dostępne połączenie internetowe, są one wysyłane na zdalne magazynowanie zasobów. Nieststy przez wspominane niejednokrotnie wcześniej problemy z emulatorem tymrazem zasymulowałem połączenie. Switch pozwala "wyłączyć lub właczyć połączenie interentowe" (Toast informuje nas o zmianie stanu internetu). W stats jest przygotowany "kontener" imitujązy zewnetrzny magazyn. Metoda chechData aktualizuje zasoby co 1000ms [setInterval] o ile wykryje połączenie. Dodatkowo umiesciłem niebieski panel który daje nam wgląd w aktualny stan magazynów.  
 
 ```js
 import React, {Component} from 'react';
