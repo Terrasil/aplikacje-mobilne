@@ -7,7 +7,7 @@
 
 Jako podstawę aplikacji wykorzystałem kod z [Lab4](https://github.com/Terrasil/aplikacje-mobilne/tree/main/Lab4).
 
-#### Dodatkowe poduły
+#### Dodatkowe moduły
 
  - react-native-scroll-indicator
  
