@@ -21,7 +21,7 @@ const Toast = ({ visible, message }) => {
     return null;
 };
 
-const ListaLiczb = ({ owner, lista }) => {
+const Lista = ({ owner, lista }) => {
     // wyswietlanie listy elementów
     if (lista) {
         return (
@@ -194,7 +194,7 @@ export default class LocalDataBase extends Component {
                 >
                 </Button>
                 <ScrollView contentContainerStyle={[ScreenStyle.scrollView,{flex:1,flexDirection: 'column'}]}>
-                    <ListaLiczb owner={this} textStyle={ScreenStyle.item} lista={this.state.listaZadan} />
+                    <Lista owner={this} textStyle={ScreenStyle.item} lista={this.state.listaZadan} />
                 </ScrollView>
                 <View style={ScreenStyle.dataBasePanel}>
                     <View style={ScreenStyle.dataBasePanelInner}>
