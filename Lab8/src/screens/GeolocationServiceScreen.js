@@ -1,55 +1,41 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet, ScrollView } from 'react-native';
-import * as Location from 'expo-location';
 import * as Permissions from 'expo-permissions';
-import MapView from 'react-native-maps';
+import Geolocation from 'react-native-geolocation-service';
 import {ScreenStyle} from '../Styles'
 
-export default class LocationScreen extends Component {
-    state = {
-        location:{},
-        errorMessage:''
-    }
-    
-    componentDidMount(){
-        this.getLocation()
-    }
-
-    getLocation = async () => {
-        const { status } = await Permissions.askAsync(Permissions.LOCATION);
-        if(status!== 'granted'){
-            console.log('PERMISSION NOT GRANTED')
-            this.setState({errorMessage:'PERMISSION NOT GRANTED'})
-        }else{
-            console.log('PERMISSION IS GRANTED')
-        }
-        //const networking = await Location.enableNetworkProviderAsync()
-        let gpsServiceStatus = await Location.hasServicesEnabledAsync();
-        if (gpsServiceStatus) {
-        const location = await Location.getCurrentPositionAsync({})
-            //this.setState({networking})
-            this.setState({location})
-        }
+export default class GeolocationServiceScreen extends Component {
+    componentDidMount() {
+        this.setState({ loading: true }, () => {
+            Geolocation.getCurrentPosition(
+                (position) => {
+                    this.setState({  loading: false });
+                    console.log(position);
+                },
+                (error) => {
+                    this.setState({ loading: false });
+                    console.log(error);
+                },
+            );
+        });
     }
 
     render() {
         return (
             <>
                 <View style={ScreenStyle.titleBox}>
-                    <Text style={ScreenStyle.titleText}>Lokalizaczja expo-location</Text>
+                    <Text style={ScreenStyle.titleText}>Lokalizaczja react-native-geolocation-service</Text>
                 </View>
                 <ScrollView contentContainerStyle={[ScreenStyle.scrollView,{flex:1,flexDirection: 'column'}]}>
                 <View style={ScreenStyle.section}>
                         <View style={ScreenStyle.cenetrHorizontaly}>
                             <View style={[ScreenStyle.centerVerticaly,{alignItems:'center'}]}>
-                            <Text style={styles.paragraph}>{this.state.errorMessage}</Text>
                             </View>
                         </View>
                     </View>
                     <View style={ScreenStyle.section}>
                         <View style={ScreenStyle.cenetrHorizontaly}>
                             <View style={[ScreenStyle.centerVerticaly,{alignItems:'center'}]}>
-                                <Text>{JSON.stringify(this.state.location)}</Text>
                             </View>
                         </View>
                     </View>
