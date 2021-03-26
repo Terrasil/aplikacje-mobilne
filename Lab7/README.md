@@ -196,7 +196,7 @@ export const ScreenStyle = styles.screen
 
 # Szczegóły
 
-#### Importy i deklaracja zmiennej bazodanowej
+#### Importy i deklaracja zmiennej bazy danych
 ```js
 import React, {Component } from 'react';
 import { Alert, Button, Modal, ScrollView,Text, TextInput, ToastAndroid, TouchableOpacity, View } from 'react-native'
@@ -208,12 +208,12 @@ import {ScreenStyle} from '../Styles'
 var db;
 ```
 
-### Starowy widok aplikacji
+### Startowy widok aplikacji
 ![start](https://i.imgur.com/QK82iEJ.png)
 
 Aplikacja domyślnie tworzy plik 'default.db' jako startowa baza danych i dodaje do niej tablice 'zadania'.
 
-#### State i funkcje inicializacyjne
+#### State'sy i funkcje inicializacyjne
 ```js
 export default class LocalDataBase extends Component {
     state = {
@@ -528,7 +528,7 @@ const Lista = ({ owner, lista }) => {
 #### Interakcja (zmiana statuzu wykonania + zapis do bazy)
 ![interakcja](https://i.imgur.com/QbMLzlO.png)
 
-#### Zmiana statuzu wykonania
+#### Zmiana statusu wykonania
 ```js
 // zmiana wykonania
 changeStatus(id, value){
